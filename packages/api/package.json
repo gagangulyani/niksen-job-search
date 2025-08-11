@@ -1,0 +1,31 @@
+{
+  "name": "@niksen/api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API server for Niksen Job Search",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "build": "echo 'Build completed'",
+    "lint": "eslint src --ext .js,.ts",
+    "lint:fix": "eslint src --ext .js,.ts --fix"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "@niksen/config": "workspace:*"
+  },
+  "keywords": [
+    "api",
+    "express",
+    "job-search"
+  ],
+  "author": "Gagan Gulyani",
+  "license": "MIT"
+}
